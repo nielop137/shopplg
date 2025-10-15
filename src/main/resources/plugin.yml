@@ -1,0 +1,64 @@
+name: NieloShop
+version: '1.0.0'
+main: pl.nielopekk.nieloshop.NieloShop
+api-version: 1.16
+author: Nielopekk
+description: Advanced shop plugin with multiple currency systems
+website: https://discord.com/users/nielopekk
+
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+
+commands:
+  nieloshop:
+    description: Main admin command for NieloShop
+    usage: /<command> [reload|save|add]
+    permission: nieloshop.admin
+    aliases: [nshop, ns]
+
+  shop:
+    description: Opens shop GUI
+    usage: /<command> <vault|time|wallet>
+    permission: nieloshop.use
+    aliases: [sklep]
+
+  portfel:
+    description: Manages virtual wallet
+    usage: /<command> [nadaj|zabierz|ustaw] [player] [amount]
+    permission: nieloshop.portfel.use
+    aliases: [wallet, purse]
+
+  czas:
+    description: Shows time played and time points
+    usage: /<command>
+    permission: nieloshop.use
+    aliases: [time, playtime]
+
+permissions:
+  nieloshop.use:
+    description: Allows opening shops
+    default: true
+
+  nieloshop.admin:
+    description: Allows admin commands
+    default: op
+
+  nieloshop.portfel.use:
+    description: Allows checking own wallet
+    default: true
+
+  nieloshop.portfel.give:
+    description: Allows giving wallet currency
+    default: op
+
+  nieloshop.portfel.take:
+    description: Allows taking wallet currency
+    default: op
+
+  nieloshop.portfel.set:
+    description: Allows setting wallet currency
+    default: op
+
+  nieloshop.reload:
+    description: Allows reloading configuration
+    default: op

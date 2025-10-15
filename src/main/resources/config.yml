@@ -1,0 +1,53 @@
+# NieloShop Configuration
+# Author: Nielopekk (discord: nielopekk)
+# Plugin for Minecraft 1.16.5 - 1.21+
+
+# Storage type: SQLITE or JSON
+storage-type: SQLITE
+
+# Time points system configuration
+time-points:
+  enabled: true
+  # Points awarded per interval
+  points-per-interval: 1
+  # Interval in seconds
+  interval-seconds: 60
+  # AFK detection - seconds without movement
+  afk-threshold-seconds: 60
+  # Stop awarding points when AFK
+  stop-on-afk: true
+
+# Wallet system configuration
+wallet:
+  enabled: true
+  # Starting balance for new players
+  starting-balance: 0
+
+# Currency formatting
+currency-format:
+  # Use short format (1k, 2.3M, 5B)
+  use-short-format: true
+  # Custom symbols
+  thousand: k
+  million: M
+  billion: B
+  trillion: T
+  # Decimal places for short format
+  decimal-places: 1
+
+# Shop GUI settings
+gui:
+  # Shop titles (supports color codes &)
+  vault-shop-title: "&6&lVault Shop"
+  time-shop-title: "&b&lTime Shop"
+  wallet-shop-title: "&a&lWallet Shop"
+
+  # Animation settings
+  enable-animations: true
+
+  # Confirmation GUI
+  confirmation-enabled: true
+  confirmation-title: "&e&lConfirm Purchase"
+
+# Debug mode
+debug: false

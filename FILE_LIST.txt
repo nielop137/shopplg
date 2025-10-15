@@ -1,0 +1,63 @@
+NieloShop - Complete File List
+================================
+
+Documentation Files (6):
+├── README.md              - Main documentation
+├── INSTALL.md             - Installation guide
+├── BUILD.md               - Build instructions
+├── FEATURES.md            - Feature list
+├── EXAMPLES.md            - Configuration examples
+├── QUICKSTART.md          - Quick start guide
+└── PROJECT_SUMMARY.md     - Project summary
+
+Configuration Files (1):
+└── pom.xml                - Maven build configuration
+
+Source Files - Java (29):
+├── NieloShop.java         - Main plugin class
+├── commands/              - Command handlers (4)
+│   ├── NieloShopCommand.java
+│   ├── ShopCommand.java
+│   ├── WalletCommand.java
+│   └── TimeCommand.java
+├── gui/                   - GUI classes (2)
+│   ├── ShopGUI.java
+│   └── ItemAddGUI.java
+├── listeners/             - Event listeners (5)
+│   ├── PlayerJoinListener.java
+│   ├── PlayerQuitListener.java
+│   ├── PlayerMoveListener.java
+│   ├── ItemAddListener.java
+│   └── ChatInputListener.java
+├── managers/              - Business logic (5)
+│   ├── ConfigManager.java
+│   ├── WalletManager.java
+│   ├── TimePointsManager.java
+│   ├── ShopManager.java
+│   └── ItemAddManager.java
+├── models/                - Data models (3)
+│   ├── ShopType.java
+│   ├── ShopItem.java
+│   └── ItemAddSession.java
+├── storage/               - Data persistence (5)
+│   ├── IStorage.java
+│   ├── StorageManager.java
+│   ├── PlayerData.java
+│   └── impl/
+│       ├── SqliteStorage.java
+│       └── JsonStorage.java
+└── utils/                 - Utilities (4)
+    ├── ItemSerializer.java
+    ├── CurrencyFormatter.java
+    ├── MessageUtil.java
+    └── PlaceholderExpansion.java
+
+Resource Files (4):
+├── plugin.yml             - Plugin metadata
+├── config.yml             - Main configuration
+├── messages.yml           - Localized messages
+└── shops.yml              - Shop items storage
+
+Total Files: 40
+Total Lines of Code: ~2786
+Total Documentation: ~2500 lines across 7 files

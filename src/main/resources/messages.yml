@@ -1,0 +1,75 @@
+# NieloShop Messages
+# Supports color codes (&) and PlaceholderAPI placeholders
+
+# Prefix for all messages
+prefix: "&8[&6NieloShop&8]&r "
+
+# General messages
+no-permission: "&cYou don't have permission to do that!"
+player-only: "&cThis command can only be used by players!"
+player-not-found: "&cPlayer not found!"
+invalid-amount: "&cInvalid amount! Please enter a valid number."
+reload-success: "&aConfiguration reloaded successfully!"
+save-success: "&aData saved successfully!"
+
+# Shop messages
+shop-vault-opened: "&aOpened Vault shop!"
+shop-time-opened: "&aOpened Time shop!"
+shop-wallet-opened: "&aOpened Wallet shop!"
+shop-empty: "&cThis shop is empty!"
+insufficient-funds: "&cYou don't have enough {currency}!"
+insufficient-inventory: "&cYou don't have enough space in your inventory!"
+purchase-success: "&aSuccessfully purchased &e{amount}x {item} &afor &e{price} {currency}&a!"
+sell-success: "&aSuccessfully sold &e{amount}x {item} &afor &e{price} {currency}&a!"
+no-items-to-sell: "&cYou don't have any items to sell!"
+
+# Wallet messages
+wallet-balance: "&aYour wallet balance: &e{balance}"
+wallet-given: "&aGiven &e{amount} &ato &e{player}&a's wallet. New balance: &e{balance}"
+wallet-taken: "&aTaken &e{amount} &afrom &e{player}&a's wallet. New balance: &e{balance}"
+wallet-set: "&aSet &e{player}&a's wallet balance to &e{balance}"
+wallet-insufficient: "&cInsufficient wallet balance!"
+
+# Time points messages
+time-points-info: "&aTime played: &e{time}\n&aTime points: &e{points}"
+time-points-earned: "&aYou earned &e{points} &atime point(s)!"
+time-points-insufficient: "&cYou don't have enough time points!"
+
+# Admin messages
+add-mode-activated: "&aItem add mode activated for shop: &e{shop}\n&7Click an item in your inventory to add it to the shop."
+add-mode-cancelled: "&cItem add mode cancelled."
+item-added: "&aItem successfully added to &e{shop} &ashop!"
+item-removed: "&aItem removed from shop!"
+click-item: "&7Click an item in your inventory to add it to the shop."
+no-item-in-hand: "&cYou must hold an item in your hand!"
+
+# GUI messages
+gui-previous-page: "&e◀ Previous Page"
+gui-next-page: "&eNext Page ▶"
+gui-back: "&c◀ Back"
+gui-close: "&cClose"
+gui-confirm: "&a✔ Confirm"
+gui-cancel: "&c✖ Cancel"
+gui-buy-1: "&aClick to buy &e1"
+gui-buy-16: "&aClick to buy &e16"
+gui-buy-64: "&aClick to buy &e64"
+gui-buy-stack: "&aClick to buy &e{amount} &astacks"
+gui-sell-1: "&eRight-click to sell &e1"
+gui-sell-all: "&eShift+Right-click to sell &eall"
+
+# Item lore in shop
+shop-item-lore:
+  - ""
+  - "&7Price: &e{price}"
+  - ""
+  - "&aLeft-click to buy"
+  - "&eRight-click to sell"
+
+# Currency names
+currency-vault: "money"
+currency-time: "time points"
+currency-wallet: "wallet coins"
+
+# Error messages
+error-occurred: "&cAn error occurred! Please contact an administrator."
+database-error: "&cDatabase error! Check console for details."

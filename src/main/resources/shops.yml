@@ -1,0 +1,12 @@
+# NieloShop Shops Configuration
+# Items will be automatically added here when using /nieloshop add command
+
+vault-shop:
+  # Example item (will be replaced by admin-added items)
+  # Items are saved with full NBT data for compatibility with custom items
+
+time-shop:
+  # Example item
+
+wallet-shop:
+  # Example item
